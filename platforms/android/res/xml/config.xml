@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="wang.taoquan" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="CordovaHttpPlugin">
+        <param name="android-package" value="com.synconset.CordovaHttpPlugin" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>一起淘券网</name>
+    <description>
+        一起淘券网
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/36.png" />
+    <icon density="mdpi" src="res/icon/android/48.png" />
+    <icon density="hdpi" src="res/icon/android/72.png" />
+    <icon density="xhdpi" src="res/icon/android/96.png" />
+    <icon density="xxhdpi" src="res/icon/android/96.png" />
+    <splash density="port-hdpi" src="res/screen/android/200.png" />
+    <splash density="port-ldpi" src="res/screen/android/320.png" />
+    <splash density="port-mdpi" src="res/screen/android/480.png" />
+    <splash density="port-xhdpi" src="res/screen/android/720.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>
